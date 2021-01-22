@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+
+    <style>
+        div#res{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Testar" onclick="resultado()">
+    <div id="res">
+       <strong>RESULTADO</strong>
+    </div>
+        
+
+    <script>
+         var res = document.getElementById("res")
+         var txt = document.getElementById("txtnac")
+
+        function resultado(){
+            if(txt == "BR"){
+                res.innerHTML += ("<p>Você é <strong>BRASILEIRO</strong></p>")
+            }
+            else{
+                res.innerHTML += ("<p>Você é <strong>ESTRANGEIRO</strong></p>")
+            }
+        }
+    </script>
+</body>
+</html>
